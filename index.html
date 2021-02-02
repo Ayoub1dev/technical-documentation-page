@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Technical Documentation Page</title>
+</head>
+<body>
+  <div class="main-div">
+    <div class="title">Loops and iteration</div>
+    <nav id="navbar">
+        <header>Table of Contents</header>
+
+        <ol>
+          <li><a href="#for_statement" class="nav-link">for statement</a></li>
+          <li><a href="#while_statement" class="nav-link">while statement</a></li>
+          <li><a href="#do...while_statement" class="nav-link">do...while statement</a></li>
+          <li><a href="#continue_statement" class="nav-link">continue statement</a></li>
+          <li><a href="#break_statement" class="nav-link">break statement</a></li>
+          <li><a href="#for..in_statement" class="nav-link">for..in statement</a></li>
+          <li><a href="#for..of_statement" class="nav-link">for..of statement</a></li>
+          <li><a href="#Reference" class="nav-link">Reference</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li><li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li><li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+          <li><a href="#" class="nav-link">..</a></li>
+        </ol>
+    </nav>
+
+    <main id="main-doc">
+
+      <section id="for_statement" class="main-section">
+        <header ><b>for statement</b></header>
+        <p>
+          
+          A <code class="code-inline">for</code> 
+          loop repeats until a specified condition evaluates to 
+          <code class="code-inline">false</code>.
+          
+          The JavaScript 
+          <code class="code-inline">for</code> 
+          loop is similar to the Java and C 
+          <code class="code-inline">for</code> loop.
+          
+        </p>
+        
+        <p>
+          A 
+          <code class="code-inline">for</code> 
+          statement looks as follows:
+          
+             <code class="code-block">for ([initialExpression]; [conditionExpression];[incrementExpression])
+  statement</code>
+          
+        </p>
+          When a 
+          <code class="code-inline">for</code> 
+          loop executes, the following occurs: 
+          <br>
+          
+          <ol>
+            <li>
+              The initializing expression 
+              <code class="code-inline">initialExpression</code>, 
+              if any, is executed. This expression usually 
+              initializes one or more loop counters, but the syntax allows an expression of any degree of 
+              complexity. This expression can also declare variables.
+            </li>
+            <li>
+              The <code class="code-inline">conditionExpression</code>
+              expression is evaluated. If the value of conditionExpression is
+              true, the loop statements execute. If the value of
+              <code class="code-inline">condition</code>
+              is false, the for loop terminates. 
+              (If the <code class="code-inline">condition</code> 
+              expression is omitted entirely, the condition is assumed to be true.)
+            </li>
+            <li>
+              The <code class="code-inline">statement</code>  executes. To execute multiple statements,
+              use a block statement (<code class="code-inline">{ ... }</code>)
+              to group those statements.
+            </li>
+            <li>
+              If present, the update expression <code class="code-inline">incrementExpression</code>
+              is executed.
+            </li>
+            <li>
+              Control returns to Step 2.
+            </li>
+          </ol>
+        <p>
+          
+        </p>
+        
+      </section>
+
+      <section id="while_statement" class="main-section">
+        <header><b>while statement</b></header>
+        
+        <p>
+          A <code class="code-inline">while</code>
+          statement executes its statements as long as a specified condition evaluates to 
+          <code class="code-inline">true</code>.
+          A <code class="code-inline">while</code> statement looks as follows:
+        </p>
+        
+        <code class="code-block">while (condition)
+  statement</code>
+        
+        <p>
+          If the 
+          <code class="code-inline">condition</code> becomes 
+          <code class="code-inline">false</code>, <code class="code-inline">statement</code> 
+          within the loop stops executing and control passes to the statement following the loop.
+        </p>
+        
+        <p>
+          The condition test occurs <i>before</i> 
+          statement in the loop is executed. If the condition returns 
+          <code class="code-inline">true</code>, <code class="code-inline">statement</code> is executed and the 
+          <code class="code-inline">condition</code> is tested again. 
+          If the condition returns 
+          <code class="code-inline">false</code>, 
+          execution stops, and control is passed to the statement following <code class="code-inline">while</code>.
+        </p>
+
+      </section>
+      
+      
+      <section id="do...while_statement" class="main-section">
+        <header><b>do...while statement</b></header>
+      
+        <p>
+          The <code class="code-inline">do...while</code> statement repeats 
+          until a specified condition evaluates to false.
+        </p>
+        
+        <p>
+          A <code class="code-inline">do...while</code> statement looks as follows:
+        </p>
+        
+        <code class="code-block">do
+  statement
+while (condition);</code>
+        
+        <p>
+          <code class="code-inline">statement</code> is always executed once 
+          before the condition is checked. (To execute multiple statements, use a block statement
+          (<code class="code-inline">{ ... }</code>) to group those statements.)
+        </p>
+        
+        <p>
+          If <code class="code-inline">condition</code> is <code class="code-inline">true</code>, 
+          the statement executes again. At the end of every execution, the condition is checked. When the
+          condition is <code class="code-inline">false</code>, execution stops, and control passes to the
+          statement following <code class="code-inline">do-while</code>.
+        </p>
+        
+      </section>
+      
+
+      <section id="continue_statement" class="main-section">
+        <header><b>continue statement</b></header>
+        
+        <p>
+          The <code class="code-inline">continue</code> statement can be used to restart a 
+          <code class="code-inline">while</code>, <code class="code-inline">do-while</code>, 
+          <code class="code-inline">for</code>, or <code class="code-inline">label</code> statement.
+        </p>
+        
+        <ul>
+          <li>
+            When you use <code class="code-inline">continue</code> without a label, it terminates the
+            current iteration of the innermost enclosing <code class="code-inline">while</code>, 
+            <code class="code-inline">do-while</code>, or <code class="code-inline">for</code> 
+            statement and continues execution of the loop with the next iteration. In contrast to 
+            the <code class="code-inline">break</code> statement,
+            <code class="code-inline">continue</code> does not 
+            terminate the execution of the loop entirely. In a 
+            <code class="code-inline">while</code> loop, it jumps back 
+            to the <code class="code-inline">increment-expression</code>.
+          </li>
+          <li>
+            When you use <code class="code-inline">continue</code> with a label, 
+            it applies to the looping statement identified with that label.
+          </li>
+        </ul>
+      </section>
+
+
+      <section id="break_statement" class="main-section">
+        <header><b>break statement</b></header>
+        
+        <p>
+          Use the <code class="code-inline">break</code> statement to terminate a loop, 
+          <code class="code-inline">switch</code>, or in conjunction with a labeled statement.
+        </p>
+        
+        <ul>
+          <li>
+            When you use <code class="code-inline">break</code> without a label, it terminates the
+            innermost enclosing <code class="code-inline">while</code>, 
+            <code class="code-inline">do-while</code>, <code class="code-inline">for</code>, 
+            or <code class="code-inline">switch</code> immediately and transfers control 
+            to the following statement.
+          </li>
+          <li>
+            When you use <code class="code-inline">break</code> with a label, 
+            it terminates the specified labeled statement.
+          </li>
+        </ul>
+        
+        <p>
+          The syntax of the <code class="code-inline">break</code> statement looks like this:
+          <code class="code-block">break;
+break [label];</code>
+          
+          <ol>
+            <li>
+              The first form of the syntax terminates the innermost enclosing loop or 
+              <code class="code-inline">switch</code>.
+            </li>
+            <li>
+              The second form of the syntax terminates the specified enclosing labeled statement.
+            </li>
+          </ol>
+        </p>
+        
+      </section>
+
+
+      <section id="for..in_statement" class="main-section">
+        <header><b>for..in statement</b></header>
+        
+        <p>
+          The <code class="code-inline">for...in</code> statement iterates a specified variable 
+          over all the enumerable properties of an object. For each distinct property, 
+          JavaScript executes the specified statements. A <code class="code-inline">for...in</code>
+          statement looks as follows:
+          
+          <code class="code-block">for (variable in object)
+  statement</code>
+        </p>
+        
+      </section>
+
+
+      <section id="for..of_statement" class="main-section">
+        <header><b>for..of statement</b></header>
+        
+        <p>
+          The <code class="code-inline">for...of</code> statement creates a loop Iterating over 
+          iterable objects (including <code class="code-inline">Array</code>, 
+          <code class="code-inline">Map</code>, <code class="code-inline">Set</code>,
+          <code class="code-inline">arguments</code> object and so on), invoking a custom 
+          iteration hook with statements to be executed for the value of each distinct property.
+        </p>
+        
+      </section>
+    
+      <section id="Reference" class="main-section">
+        <header><b>Reference</b></header>
+        
+        <p>
+          <ul>
+            <li>
+              All the documentation in this page is taken from 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration#for_statement">MDN</a>
+            </li>
+          </ul>
+        </p>
+        
+      </section>
+
+    </main>
+<!--   end #main-doc -->
+    </div>
+</body>
+</html>
